@@ -1,5 +1,68 @@
-h1{
-    background-color: red;
-    color: white;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.cabecera {
+    background-color: #006633;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.contenedor-cabecera{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 80px;
+}
+
+.logo img {
+    height: 100%;
+    display: block;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;/*gap: Establece el mismo espacio para filas y columna*/
+}
+
+.lista-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+}
+
+.lista-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.lista-menu li a:hover {
+    color: #ffcc00;
+}
+
+
+
