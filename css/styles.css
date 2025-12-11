@@ -20,7 +20,7 @@ body {
     background-color: #006633;
     color: white;
     padding: 10px 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     border-bottom: 5px solid yellow;
 }
 
@@ -65,7 +65,7 @@ body {
     color: #ffcc00;
 }
 
-/* banner css */
+/* ========== BANNER / SECCIÓN HERO ========== */
 .banner {
     position: relative;
     display: flex;
@@ -90,6 +90,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     bottom: 0;
     background-color: rgba(0, 102, 51, 0.6);
     z-index: 2;
@@ -102,7 +103,7 @@ body {
     z-index: 3;
     padding: 0 20px;
     text-align: center;
-    color: rgb(2, 38, 12);
+    color: white;
 }
 
 .contenedor-banner h1 {
@@ -116,16 +117,272 @@ body {
 }
 
 .btn-principal {
-   background-color: #ffcc00;
-   color: #006633;
-   padding: 15px 30px;
-   font-size: 16px;
-   font-weight: bold;
-   border: none;
-   border-radius: 5px;
+    background-color: #ffcc00;
+    color: #006633;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
+
 .btn-principal:hover {
     background-color: white;
     color: #006633;
+}
+
+/* ========== CONTENIDO PRINCIPAL ========== */
+.contenido-principal {
+    padding: 40px 0;
+}
+
+/* SECCIÓN: SOBRE NOSOTROS */
+.seccion-nosotros {
+    background-color: white;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    border-left: 5px solid #006633;
+}
+
+.seccion-nosotros h2 {
+    color: #006633;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.seccion-nosotros p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* SECCIÓN: SERVICIOS */
+.seccion-servicios {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.seccion-servicios h2 {
+    color: #006633;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.seccion-servicios .subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tarjeta-servicio {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.imagen-servicio {
+    width: 100%;
+    height: 200px;
+}
+
+.imagen-servicio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-servicio {
+    padding: 20px;
+}
+
+.contenido-servicio h3 {
+    color: #006633;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contenido-servicio p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn-mas {
+    display: inline-block;
+    background-color: #006633;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-mas:hover {
+    background-color: #004d26;
+}
+
+/* SECCIÓN: CARACTERÍSTICAS */
+.seccion-caracteristicas {
+    background-color: white;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.seccion-caracteristicas h2 {
+    color: #006633;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.grid-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.caracteristica {
+    text-align: center;
+    padding: 20px;
+}
+
+.caracteristica .icono {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.caracteristica h3 {
+    color: #006633;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.caracteristica p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* SECCIÓN: CONTACTO */
+.seccion-contacto {
+    background-color: #006633;
+    color: white;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.seccion-contacto h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.seccion-contacto .subtitulo {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #ffcc00;
+    color: #006633;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: white;
+    color: #006633;
+}
+
+/* ========== PIE DE PÁGINA ========== */
+.pie-pagina {
+    background-color: #004d26;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.pie-pagina p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ========== RESPONSIVE (MÓVILES) ========== */
+@media (max-width: 768px) {
+    .contenedor-cabecera {
+        flex-direction: column;
+    }
+
+    .lista-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .contenedor-banner h1 {
+        font-size: 28px;
+    }
+
+    .contenedor-banner p {
+        font-size: 16px;
+    }
+
+    .grid-servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-caracteristicas {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }   

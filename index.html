@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-    <!-- METADATOS Y CONFIGURACIÓN -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio Web UPEC</title>
@@ -10,37 +9,129 @@
 </head>
 
 <body>
-    <!-- ========== ENCABEZADO / MENÚ SUPERIOR ========== -->
+    <!-- ENCABEZADO / MENÚ SUPERIOR -->
     <header class="cabecera">
         <div class="contenedor-cabecera">
-            <!-- Logo y nombre del sitio -->
             <div class="logo">
                 <img src="img/logo_upec.png" alt="Logo UPEC">
             </div>
-            <!-- Menú de navegación -->
             <nav class="menu">
                 <ul class="lista-menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <!-- banner principal -->
-         <section class="banner">
-            <img src="img/banner.jpg" alt="banner principal">
-            <div class="contenedor-banner">
-                <h1>Bienvenido a nuestro sitio web </h1>
-                <p>Explora nuestros servicios.</p>
-                <button class="btn-principal"> Ver más</button>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="banner" id="inicio">
+        <img src="img/banner.jpg" alt="banner principal">
+        <div class="contenedor-banner">
+            <h1>Bienvenido a nuestro sitio web</h1>
+            <p>Explora nuestros servicios.</p>
+            <button class="btn-principal">Ver más</button>
+        </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido-principal">
+
+        <!-- SECCIÓN SOBRE NOSOTROS -->
+        <section class="seccion-nosotros" id="nosotros">
+            <div class="contenedor">
+                <h2>¿Quiénes Somos?</h2>
+                <p>Somos una institución educativa dedicada a formar profesionales de calidad en el área de tecnología y multimedia. Con más de 10 años de experiencia, ayudamos a nuestros estudiantes a desarrollar habilidades necesarias para el mundo laboral.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE SERVICIOS -->
+        <section class="seccion-servicios" id="servicios">
+            <div class="contenedor">
+                <h2>Nuestros Servicios</h2>
+                <p class="subtitulo">Conoce lo que ofrecemos</p>
+
+                <div class="grid-servicios">
+
+                    <!-- SERVICIO 1 -->
+                    <div class="tarjeta-servicio">
+                        <div class="imagen-servicio">
+                            <img src="img/servicio1.jpg" alt="Diseño Web">
+                        </div>
+                        <div class="contenido-servicio">
+                            <h3>Diseño Web</h3>
+                            <p>Creamos sitios web modernos y responsivos adaptados a tus necesidades.</p>
+                            <a href="#" class="btn-mas">Ver Más</a>
+                        </div>
+                    </div>
+
+                    <!-- SERVICIO 2 -->
+                    <div class="tarjeta-servicio">
+                        <div class="imagen-servicio">
+                            <img src="img/servicio2.jpg" alt="Desarrollo">
+                        </div>
+                        <div class="contenido-servicio">
+                            <h3>Desarrollo</h3>
+                            <p>Aplicaciones web y móviles con las últimas tecnologías del mercado.</p>
+                            <a href="#" class="btn-mas">Ver Más</a>
+                        </div>
+                    </div>
+
+                    <!-- SERVICIO 3 -->
+                    <div class="tarjeta-servicio">
+                        <div class="imagen-servicio">
+                            <img src="img/servicio3.jpg" alt="Consultoría">
+                        </div>
+                        <div class="contenido-servicio">
+                            <h3>Consultoría</h3>
+                            <p>Asesoramiento profesional para optimizar tus proyectos digitales.</p>
+                            <a href="#" class="btn-mas">Ver Más</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CONTACTO -->
+        <section class="seccion-contacto" id="contacto">
+            <div class="contenedor">
+                <h2>Ponte en Contacto</h2>
+                <p class="subtitulo">Nos gustaría saber de ti</p>
+
+                <form class="formulario">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+
+                </form>
             </div>
         </section>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2025 Sitio Web UPEC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 
